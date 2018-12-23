@@ -5,8 +5,8 @@ const app = express();
 
 app.use(express.static(__dirname));
 
-app.get('*',(req,res) => {
-    res.sendfile(path.resolve(__dirname,'index.html'));
+app.get('*', (req, res) => {
+    res.sendfile(path.resolve(__dirname, 'index.html'));
 });
 
 app.listen(port);
